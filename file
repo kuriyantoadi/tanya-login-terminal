@@ -1,0 +1,15 @@
+echo "apakah anda ingin masuk mode root?"
+
+echo -n "tekan 'y' jika ya :"
+read pilih
+
+
+if [ -z $pilih ] 
+then
+	echo ""
+elif [ "y" == $pilih  ] 
+then
+	sudo su
+else
+	echo "a"
+fi
